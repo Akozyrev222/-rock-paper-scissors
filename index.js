@@ -118,7 +118,7 @@ class Table {
 
     printTable() {
         const table = new AsciiTable3()
-            .setHeading(TABLE_HEADER, ...this.elements);
+            .setHeading(TABLE_HEADER, ...this.elements)
             .setAlign(3, AlignmentEnum.CENTER);
         this.elements.forEach((e, i) => table.addRow(e, ...this.convertedMatrix[i]));
         return table.toString();
