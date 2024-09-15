@@ -135,7 +135,7 @@ const isEvenCount = (elements) => {
 }
 
 const isValid = (elements) => {
-    return !isEvenCount(elements) && !hasDuplicates(elements);
+    return elements.length !== 0 && elements.length !== 1 && !isEvenCount(elements) && !hasDuplicates(elements);
 }
 
 const printAvailableMoves = () => {
